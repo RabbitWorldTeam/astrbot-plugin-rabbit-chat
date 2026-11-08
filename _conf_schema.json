@@ -1,0 +1,14 @@
+{
+  "enabled": {"description": "启用桥接，修改后重载插件", "type": "bool", "default": false},
+  "host": {"description": "监听地址；同机使用 127.0.0.1", "type": "string", "default": "127.0.0.1"},
+  "port": {"description": "WebSocket 监听端口", "type": "int", "default": 26670},
+  "token": {"description": "与 RabbitCore 一致的独立随机 Token，至少24字符", "type": "string", "default": "", "obvious_hint": true},
+  "server_id": {"description": "与 RabbitCore 一致的服务器 ID", "type": "string", "default": "rabbit-server"},
+  "platform_id": {"description": "AstrBot 机器人实例 ID", "type": "string", "default": ""},
+  "group_id": {"description": "唯一目标群 ID", "type": "string", "default": ""},
+  "group_name": {"description": "游戏内显示的群名称", "type": "string", "default": "群聊"},
+  "id_namespace": {"description": "平台稳定 ID 前缀，llbot 使用 qq", "type": "string", "default": "qq"},
+  "admin_ids": {"description": "明确授权的账号 ID，不含 qq: 前缀", "type": "list", "default": []},
+  "game_to_group": {"description": "游戏聊天和上下线死亡通知转发至群", "type": "bool", "default": true},
+  "group_to_game": {"description": "群聊文本转发至游戏", "type": "bool", "default": true}
+}
